@@ -3,7 +3,7 @@
 <div class="stuff">
   <br><br>
   <h1>Brian Davis</h1>
-  <h2>badavis95@hotmail.com ❖ (646) 784-1235 ❖ New York City, NY</h2>
+  <h2>badavis95@hotmail.com ❖ XXX-XXX-XXXX ❖ New York City, NY</h2>
   <hr />
   <br>
   <p class="head">Skills and Certifications</p>
