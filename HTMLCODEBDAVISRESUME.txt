@@ -1,0 +1,48 @@
+<div id="header"></div>
+<div class="left"></div>
+<div class="stuff">
+  <br><br>
+  <h1>Brian Davis</h1>
+  <h2>badavis95@hotmail.com ❖ (646) 784-1235 ❖ New York City, NY</h2>
+  <hr />
+  <br>
+  <p class="head">Skills and Certifications</p>
+  <ul>
+<li>Amazon Web Services Certified Solutions Architect Associate Earned February 2020</li>
+<li>CompTIA A+ Earned October 2020</li>
+<li>• Able to architect highly available and fault tolerant structures utilizing services such as EC2, VPC, 
+IAM, Lambda, EBS, DynamoDB, CloudFormation, Config, CloudWatch, and CloudTrail.</li>
+<li>▪ Networking (DNS, DHCP, TCP/IP)</li>
+<li>▪ Software, Network, and Hardware Troubleshooting</li>
+<li>▪ Proficient with Windows, Linux (RHEL), Apple OS X, and Mobile Devices.</li>
+<li>▪ Desktop and Cloud Virtualization </li>
+<li>▪ Cloud Computing and Networking</li>
+<li>▪ Python Automation</li>
+<li>▪ Excellent interpersonal skills with a focus on customer service</li>
+<li>▪ Basic Proficiency with Command Line Interfaces such as bash, PowerShell, and the AWS CLI.</li>
+<li>▪ Proficient in the following DevOps tools: Jenkins, Ansible, Docker, and git.</li>
+</ul>
+
+  <p class="head">Experience</p>
+  <ul> 
+    IT SERVICE DESK ANALYST •VITAMINSHOPPE• MAY 2021 – PRESENT 
+  </ul>
+  <ul>
+    <li>Assisted our retail and corporate users with a myriad of technical issues. Collaborated with vendors to 
+ensure uptime of services in our sites such as POS and networking. Developed a bot to assist with 
+schedule issues. I managed our ticket queue as well as helped train new associates. </li>
+      </ul>
+  <p class="head">EDUCATION</p>
+  <ul>
+  <a
+ href="https://www.csi.cuny.edu">
+    <li>CUNY College of Staten Island - Business Administration B.S.</li>
+</a>
+  <!--Link-->
+   </ul>
+  <p class="head">Portfolio</p>
+  <li> https://github.com/Badavis95 </li>
+</div>
+<div class="right"></div>
+<div id="footer">
+  <h2 id="name">Brian Davis</h2></div>
