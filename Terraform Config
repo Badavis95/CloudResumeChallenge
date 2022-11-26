@@ -23,43 +23,69 @@ resource "aws_route53_zone" "Route53HostedZone2" {
     name = "bdavisawsresume.link."
 }
 
-resource "aws_cloudfront_distribution" "CloudFrontDistribution" {
-    aliases = [
-        "bdavisawsresume.link"
+resource "aws_route53_record" "Route53RecordSet" {
+    name = "d3gj2jt63jkpo6.cloudfront.net."
+    type = "NS"
+    ttl = 172800
+    records = [
+        "ns-518.awsdns-00.net.",
+        "ns-1487.awsdns-57.org.",
+        "ns-378.awsdns-47.com.",
+        "ns-1830.awsdns-36.co.uk."
     ]
-    origin {
-        domain_name = "htmlresumebdiddy.s3.us-east-1.amazonaws.com"
-        origin_id = "htmlresumebdiddy.s3.us-east-1.amazonaws.com"
-        
-        origin_path = ""
-        s3_origin_config {
-            origin_access_identity = ""
-        }
+    zone_id = "Z03539112B4J640BVF2GV"
+}
+
+resource "aws_route53_record" "Route53RecordSet2" {
+    name = "d3gj2jt63jkpo6.cloudfront.net."
+    type = "SOA"
+    ttl = 900
+    records = [
+        "ns-518.awsdns-00.net. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400"
+    ]
+    zone_id = "Z03539112B4J640BVF2GV"
+}
+
+resource "aws_route53_record" "Route53RecordSet3" {
+    name = "bdavisawsresume.link."
+    type = "A"
+    alias {
+        name = "d3gj2jt63jkpo6.cloudfront.net."
+        zone_id = "Z2FDTNDATAQYW2"
+        evaluate_target_health = false
     }
-    default_cache_behavior {
-        allowed_methods = [
-            "HEAD",
-            "GET"
-        ]
-        compress = true
-        smooth_streaming  = false
-        target_origin_id = "htmlresumebdiddy.s3.us-east-1.amazonaws.com"
-        viewer_protocol_policy = "redirect-to-https"
-    }
-    comment = ""
-    price_class = "PriceClass_100"
-    enabled = true
-    viewer_certificate {
-        acm_certificate_arn = "arn:aws:acm:us-east-1:606997302812:certificate/14e5e1ec-bd8c-4a7e-b547-e93e1723c34e"
-        cloudfront_default_certificate = false
-        minimum_protocol_version = "TLSv1.2_2021"
-        ssl_support_method = "sni-only"
-    }
-    restrictions {
-        geo_restriction {
-            restriction_type = "none"
-        }
-    }
-    http_version = "http2"
-    is_ipv6_enabled = false
+    zone_id = "Z02439581WWGOU9XWNRUC"
+}
+
+resource "aws_route53_record" "Route53RecordSet4" {
+    name = "bdavisawsresume.link."
+    type = "NS"
+    ttl = 172800
+    records = [
+        "ns-443.awsdns-55.com.",
+        "ns-1450.awsdns-53.org.",
+        "ns-1846.awsdns-38.co.uk.",
+        "ns-1014.awsdns-62.net."
+    ]
+    zone_id = "Z02439581WWGOU9XWNRUC"
+}
+
+resource "aws_route53_record" "Route53RecordSet5" {
+    name = "bdavisawsresume.link."
+    type = "SOA"
+    ttl = 900
+    records = [
+        "ns-443.awsdns-55.com. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400"
+    ]
+    zone_id = "Z02439581WWGOU9XWNRUC"
+}
+
+resource "aws_route53_record" "Route53RecordSet6" {
+    name = "_cb31b662b029242718bc0359324eee97.bdavisawsresume.link."
+    type = "CNAME"
+    ttl = 300
+    records = [
+        "_8a173c1a41e2a9823db46171adf7d32f.yzdtlljtvc.acm-validations.aws."
+    ]
+    zone_id = "Z02439581WWGOU9XWNRUC"
 }
