@@ -1,0 +1,65 @@
+terraform {
+    required_providers {
+        aws = {
+            source = "hashicorp/aws"
+            version = "~> 3.0"
+        }
+    }
+}
+
+provider "aws" {
+    region = "us-east-1"
+}
+
+resource "aws_s3_bucket" "S3Bucket" {
+    bucket = "htmlresumebdiddy"
+}
+
+resource "aws_route53_zone" "Route53HostedZone" {
+    name = "d3gj2jt63jkpo6.cloudfront.net."
+}
+
+resource "aws_route53_zone" "Route53HostedZone2" {
+    name = "bdavisawsresume.link."
+}
+
+resource "aws_cloudfront_distribution" "CloudFrontDistribution" {
+    aliases = [
+        "bdavisawsresume.link"
+    ]
+    origin {
+        domain_name = "htmlresumebdiddy.s3.us-east-1.amazonaws.com"
+        origin_id = "htmlresumebdiddy.s3.us-east-1.amazonaws.com"
+        
+        origin_path = ""
+        s3_origin_config {
+            origin_access_identity = ""
+        }
+    }
+    default_cache_behavior {
+        allowed_methods = [
+            "HEAD",
+            "GET"
+        ]
+        compress = true
+        smooth_streaming  = false
+        target_origin_id = "htmlresumebdiddy.s3.us-east-1.amazonaws.com"
+        viewer_protocol_policy = "redirect-to-https"
+    }
+    comment = ""
+    price_class = "PriceClass_100"
+    enabled = true
+    viewer_certificate {
+        acm_certificate_arn = "arn:aws:acm:us-east-1:606997302812:certificate/14e5e1ec-bd8c-4a7e-b547-e93e1723c34e"
+        cloudfront_default_certificate = false
+        minimum_protocol_version = "TLSv1.2_2021"
+        ssl_support_method = "sni-only"
+    }
+    restrictions {
+        geo_restriction {
+            restriction_type = "none"
+        }
+    }
+    http_version = "http2"
+    is_ipv6_enabled = false
+}
