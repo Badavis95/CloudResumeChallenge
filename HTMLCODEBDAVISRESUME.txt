@@ -163,7 +163,7 @@
             <!-- Microformats! -->
             <h1 class="fn">Brian Davis</h1>
             <p> Cell: <span class="tel">xxx-xxx-xxxx</span>
-                <br /> Email: <a class="email" href="mailto:badavis95@hotmail.com">badavis95@hotmail.com</a>
+                <br /> Email: <a class="email" href="mailto:xxxxxxxx@hotmail.com">xxxxxxxx@hotmail.com</a>
                 <br /> Github: <a href="https://github.com/Badavis95">My Github which proves my value :]</a>
             </p>
         </div>
