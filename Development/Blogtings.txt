@@ -1,0 +1,12 @@
+Blog thoughts:
+
+A while ago, probably in May 2022 I started the cloud resume challenge.
+A number of things occurred in life which derailed me from focusing on it, namely a potential career change and other personal factors including general burnout.
+
+today, I revisted the beginning portion - the html + CSS.
+I am going to be upfront. HTML/CSS is NOT a skill i possess. However all code is simply using logic to tell a computer what to do. A very fundamental understanding of syntax and a good live editor like liveweave allowed me to fix the issues in my code. I actually contracted my new favorite technical assistant... OPENAI aka CHATGPT3. Despite the bots best efforts, my original code could not be revised effectively enough to get what i wanted. 
+
+However, going back and forth with the bot taught me a bunch of things pertaining to my specific issue without all the extra fluff that we tend to not need with specific issues. I had my code and styling, it just wasnt aligned right. Despite the bots best efforts it couldnt do my homework for me, but it DID showcase where i was going wrong which allowed me to slowly edit my code to get the styling somewhat right. At this point in time i don't feel as if the htmlcode or this resume is finished, but i have a minimum viable product that will at least show me that my application is being viewed and my github as well rather than just being another name on epaper that gets tossed out(ignored). 
+
+Next, I need to incorporate the visitorcounter. 
+after that, i need to ensure that it is working with apigateway and lambda in order to actually add a visitor to the counter.
