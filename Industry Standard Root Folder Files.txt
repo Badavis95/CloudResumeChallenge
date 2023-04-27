@@ -1,5 +1,0 @@
-README.md or README.txt: a file containing information about the project, such as a brief description, installation instructions, usage examples, and licensing information.
-LICENSE: a file containing the licensing terms and conditions under which the project can be used, distributed, and modified.
-.gitignore: a file containing a list of files and directories that should be ignored by Git when tracking changes to the project. This can include temporary files, build artifacts, and sensitive information.
-package.json or requirements.txt: a file containing a list of dependencies and their versions that the project requires to run. This is used by package managers to install the required dependencies automatically.
-app.py or main.js: the main entry point file of the project that contains the code to run the project.
