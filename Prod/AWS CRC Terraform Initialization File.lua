@@ -23,7 +23,7 @@ resource "aws_iam_user" "IAMUser2" {
     path = "/"
     name = "Former2"
     tags = {
-        AKIAY2U63ZYOGBXXXB3Q = "Terraform"
+        "REPLACEME" = "Terraform" #Former2 access key 
         Terraform Config = "Former2"
     }
 }
