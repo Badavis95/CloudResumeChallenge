@@ -1,0 +1,19 @@
+AWS CRC Terraform Initialization File.lua
+AWS CRC Terraform Initialization File.tf
+Blogtings.txt
+Cloud Resume Sample (not good).html
+Current Progress.txt
+DynamoDBLambdaFINAL.py
+DynamoDBLambdaTest1.coffee
+DynamoDBTest3.txt
+DynamoDBfunctions.txt
+Files for CHATGPt/
+HTMLCODEBDAVISRESUME.txt
+SamDeployment.txt
+Testfolder1/
+The Cloud Resume Challenge Guidebook - AWS Edition.pdf
+endpoint.txt
+floix-onepage-resume-bootstrap-template/
+index.main.html
+indextest.html
+lambdafunctionpreliminarycode.txt

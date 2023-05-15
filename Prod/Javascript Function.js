@@ -3,7 +3,7 @@
 <head>
     <body onload="updateCounter()">
         <script>
-    function updateCounter(){
+        function updateCounter(){
         fetch('https://3kgi0zz7gj.execute-api.us-east-1.amazonaws.com/Prod',{
             method: 'GET'
         })
@@ -18,9 +18,9 @@
         }
       })
       .then(data => document.getElementById("Visit_Count").innerText = data.Visit_Count)
-    }
+        }
         </script>
         Visits: <span id="Visit_Count"></span>
     </body>    
-</head>
+  </head>
 </html>
