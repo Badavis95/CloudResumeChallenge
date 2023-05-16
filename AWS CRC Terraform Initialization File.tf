@@ -19,15 +19,6 @@ resource "aws_iam_user" "IAMUser" {
     }
 }
 
-resource "aws_iam_user" "IAMUser2" {
-    path = "/"
-    name = "Former2"
-    tags = {
-        "REPLACEME" = "Terraform" #Former2 access key 
-        Terraform Config = "Former2"
-    }
-}
-
 resource "aws_iam_role" "IAMRole" {
     path = "/service-role/"
     name = "AmazonAppStreamPCAAccess"
