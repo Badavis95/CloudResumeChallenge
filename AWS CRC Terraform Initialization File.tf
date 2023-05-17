@@ -132,6 +132,7 @@ resource "aws_cloudfront_distribution" "CloudFrontDistribution" {
             "PUT",
             "PATCH"
         ]
+        cached_methods   = ["HEAD", "GET"]
         compress = false
         smooth_streaming  = false
         target_origin_id = "bdavisawsresume.link.s3.us-east-1.amazonaws.com"
