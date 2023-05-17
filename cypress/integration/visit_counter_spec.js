@@ -1,7 +1,7 @@
 describe('Visit Counter Test', () => {
     it('Checks if the visit counter is updated', () => {
       // Replace the path with the correct path to your index.html file
-      cy.visit(https://bdavisawsresume.link');
+      cy.visit('https://bdavisawsresume.link');
   
       cy.window()
         .its('updateCounter')
