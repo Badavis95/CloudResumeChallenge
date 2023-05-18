@@ -122,22 +122,29 @@ resource "aws_cloudfront_distribution" "CloudFrontDistribution" {
         
         origin_path = ""
     }
-    default_cache_behavior {
-        allowed_methods = [
-            "HEAD",
-            "DELETE",
-            "POST",
-            "GET",
-            "OPTIONS",
-            "PUT",
-            "PATCH"
-        ]
+        default_cache_behavior {
+            allowed_methods = [
+                "HEAD",
+                "DELETE",
+                "POST",
+                "GET",
+                "OPTIONS",
+                "PUT",
+                "PATCH"
+            ]
         cached_methods   = ["HEAD", "GET"]
         compress = false
         smooth_streaming  = false
         target_origin_id = "bdavisawsresume.link.s3.us-east-1.amazonaws.com"
         viewer_protocol_policy = "https-only"
+        forwarded_values {
+            query_string = false
+            cookies {
+                forward = "none"
+            }
+        }
     }
+
     comment = ""
     price_class = "PriceClass_All"
     enabled = true
