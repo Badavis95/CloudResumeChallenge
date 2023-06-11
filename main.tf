@@ -19,7 +19,7 @@ provider "aws" {
 
 resource "aws_lambda_function" "VisitorCounterAPI" {
   function_name                  = "VisitorCounterAPI"
-  handler                        = "lambda_function.lambda_handler"
+  handler                        = "Update_DB_Count.lambda_handler"
   memory_size                    = 128
   reserved_concurrent_executions = -1
   role                           = "arn:aws:iam::606997302812:role/service-role/VisitorCounterAPI-role-fqc7x4pi"
