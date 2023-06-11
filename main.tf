@@ -5,11 +5,17 @@ terraform {
       version = "5.0.1"
     }
   }
+  backend "s3" {
+    bucket = "diddyscrctfstate"
+    key    = "terraform.tfstate"
+    region = "us-east-1"
+  }
 }
 
 provider "aws" {
   region = "us-east-1"
 }
+
 
 resource "aws_lambda_function" "VisitorCounterAPI" {
   function_name                  = "VisitorCounterAPI"
